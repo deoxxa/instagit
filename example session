@@ -1,0 +1,7 @@
+➜  testing git:(master) ✗ git push --mirror example@host.local:this/is/for/testing.git
+Initialized empty Git repository in /home/example/gits/this/is/for/testing.git/
+Counting objects: 2, done.
+Writing objects: 100% (2/2), 156 bytes, done.
+Total 2 (delta 0), reused 0 (delta 0)
+To example@host.local:this/is/for/testing.git
+ * [new branch]      master -> master
