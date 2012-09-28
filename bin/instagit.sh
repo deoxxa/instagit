@@ -1,6 +1,6 @@
 #!/bin/bash
 
-[ -e ~/.instagit ] && . ~/.instagit;
+[ -e ~/.instagit.rc ] && . ~/.instagit.rc;
 
 if [ "x${SSH_ORIGINAL_COMMAND}" = "x" ]; then
   echo "This script should be run via ssh" >&2;
