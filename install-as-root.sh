@@ -46,7 +46,7 @@ print_and_execute cp -v -a ${MY_ROOT}/config/instagit.rc.example ${INSTAGIT_INST
 print_and_execute chmod -v 644 ${INSTAGIT_INSTALL_HOME}/.instagit.rc;
 print_and_execute mkdir -v ${INSTAGIT_INSTALL_HOME}/gits;
 print_and_execute chown -v ${INSTAGIT_INSTALL_USER} ${INSTAGIT_INSTALL_HOME}/gits;
-print_and_execute chmod -v 700 ${INSTAGIT_INSTALL_USER} ${INSTAGIT_INSTALL_HOME}/gits;
+print_and_execute chmod -v 700 ${INSTAGIT_INSTALL_HOME}/gits;
 print_and_execute mkdir -v ${INSTAGIT_INSTALL_HOME}/.ssh;
 print_and_execute chown -v ${INSTAGIT_INSTALL_USER} ${INSTAGIT_INSTALL_HOME}/.ssh;
 print_and_execute chmod -v 700 ${INSTAGIT_INSTALL_HOME}/.ssh;
