@@ -39,7 +39,7 @@ MY_LOCATION=$(dirname ${0});
 INSTAGIT_INSTALL_USER=${1};
 INSTAGIT_INSTALL_HOME=${2};
 
-print_and_execute adduser --system --home ${INSTAGIT_INSTALL_HOME} --disabled-login --disabled-password ${INSTAGIT_INSTALL_USER}
+print_and_execute adduser --system --shell /bin/sh --home ${INSTAGIT_INSTALL_HOME} --disabled-password ${INSTAGIT_INSTALL_USER};
 print_and_execute cp -v -a ${MY_ROOT}/bin/instagit.sh ${INSTAGIT_INSTALL_HOME}/instagit.sh;
 print_and_execute chmod -v 755 ${INSTAGIT_INSTALL_HOME}/instagit.sh;
 print_and_execute cp -v -a ${MY_ROOT}/config/instagit.rc.example ${INSTAGIT_INSTALL_HOME}/.instagit.rc;
